@@ -26,10 +26,10 @@ const (
 	MAX_ATTEMPTS         = 50000
 	RETRY_DELAY_MS       = 1000
 	CONSECUTIVE_ATTEMPTS = 10
-	TIME_DELAY_SEC       = 470
+	TIME_DELAY_SEC       = 500
 )
 
-var REGIONS = []string{"ru-1"}
+var REGIONS = []string{"ru-1", "ru-2", "ru-7"}
 var TARGET_CIDRS = []string{
 	"5.101.50.0/23", "5.178.85.0/24", "5.188.56.0/24", "5.188.112.0/22",
 	"5.188.118.0/23", "5.188.158.0/23", "5.189.239.0/24", "31.41.157.0/24",
