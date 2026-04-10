@@ -62,9 +62,9 @@ while IFS='|' read -r ACCOUNT_ID USERNAME PASSWORD PROJECT_ID || [[ -n "$ACCOUNT
     echo "🔑 $TOKEN"
 
     # Сохраняем результат для дальнейшего использования
-    echo "${TOKEN}|${PROJECT_ID}|" >> tokens.txt
+    echo "${TOKEN}|${PROJECT_ID}|" >> accounts.txt
 
 done < "$ACCOUNTS_FILE"
 
 echo ""
-echo "🏁 Обработка завершена. Токены сохранены в tokens.txt"
+echo "🏁 Обработка завершена. Токены сохранены в accounts.txt"
